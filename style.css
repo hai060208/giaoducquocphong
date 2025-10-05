@@ -1,0 +1,35 @@
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 max-w-6xl">
+    <header class="text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-green-700 leading-tight">
+            Cơ Cấu Toàn Diện & Nhiệm Vụ Cốt Lõi QĐND Việt Nam
+        </h1>
+        <p class="mt-4 text-xl text-gray-700 max-w-4xl mx-auto italic font-medium">
+            Khám phá vai trò lãnh đạo, đảm bảo và tác chiến của 8 tổ chức chính trong Bộ Quốc phòng.
+        </p>
+    </header>
+
+    <main>
+        <!-- Phần Tương tác (Tab Navigation) -->
+        <section class="mb-12">
+            <div id="tabs-container" class="grid grid-cols-4 md:grid-cols-8 gap-3 sm:gap-4 max-w-full mx-auto">
+                <!-- Các nút Tab sẽ được tạo bằng JavaScript -->
+            </div>
+        </section>
+
+        <!-- Phần Nội dung Chi tiết (Dynamic Cards) -->
+        <section class="relative min-h-[600px] md:min-h-[500px] max-w-full mx-auto">
+            <div id="content-container" class="flex justify-center">
+                <!-- Các Thẻ nội dung chi tiết sẽ được tạo bằng JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Thông điệp Kết thúc -->
+    <footer class="mt-20 text-center">
+        <div class="bg-green-700 text-white py-10 px-6 rounded-xl shadow-2xl">
+            <p class="text-2xl md:text-3xl font-bold tracking-wider">
+                "Trung với Đảng, hiếu với dân, sẵn sàng chiến đấu hy sinh..."
+            </p>
+        </div>
+    </footer>
+</div>
