@@ -1,35 +1,128 @@
-<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 max-w-6xl">
-    <header class="text-center mb-16">
-        <h1 class="text-5xl md:text-6xl font-extrabold text-green-700 leading-tight">
-            Cơ Cấu Toàn Diện & Nhiệm Vụ Cốt Lõi QĐND Việt Nam
-        </h1>
-        <p class="mt-4 text-xl text-gray-700 max-w-4xl mx-auto italic font-medium">
-            Khám phá vai trò lãnh đạo, đảm bảo và tác chiến của 8 tổ chức chính trong Bộ Quốc phòng.
-        </p>
-    </header>
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-    <main>
-        <!-- Phần Tương tác (Tab Navigation) -->
-        <section class="mb-12">
-            <div id="tabs-container" class="grid grid-cols-4 md:grid-cols-8 gap-3 sm:gap-4 max-w-full mx-auto">
-                <!-- Các nút Tab sẽ được tạo bằng JavaScript -->
-            </div>
-        </section>
+body {
+  margin: 0;
+  background-color: #e9ede3;
+  color: #222;
+}
 
-        <!-- Phần Nội dung Chi tiết (Dynamic Cards) -->
-        <section class="relative min-h-[600px] md:min-h-[500px] max-w-full mx-auto">
-            <div id="content-container" class="flex justify-center">
-                <!-- Các Thẻ nội dung chi tiết sẽ được tạo bằng JavaScript -->
-            </div>
-        </section>
-    </main>
+header {
+  background-color: #334d00;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
 
-    <!-- Thông điệp Kết thúc -->
-    <footer class="mt-20 text-center">
-        <div class="bg-green-700 text-white py-10 px-6 rounded-xl shadow-2xl">
-            <p class="text-2xl md:text-3xl font-bold tracking-wider">
-                "Trung với Đảng, hiếu với dân, sẵn sàng chiến đấu hy sinh..."
-            </p>
-        </div>
-    </footer>
-</div>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+aside {
+  background-color: #50693a;
+  color: #fff;
+  width: 280px;
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+aside h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#lessonList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lesson-btn {
+  background-color: #e0e8d0;
+  color: #000;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: left;
+}
+
+.lesson-btn:hover {
+  background-color: #c5d7a2;
+}
+
+.lesson-btn.done {
+  background-color: #b2d37a;
+}
+
+.progress {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+button#resetAll {
+  background-color: #9c2b2b;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button#resetAll:hover {
+  background-color: #b43d3d;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  transition: 0.4s ease;
+}
+
+.controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  background-color: #334d00;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #486d00;
+}
+
+footer {
+  text-align: center;
+  background-color: #334d00;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+  main {
+    padding: 1rem;
+  }
+}

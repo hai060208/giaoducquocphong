@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học Quân Sự</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>HỌC QUÂN SỰ</h1>
+    <p>Trang học tập rèn luyện kỹ năng quân sự cơ bản</p>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Danh sách bài học</h2>
+      <div id="lessonList"></div>
+      <div class="progress">
+        Tiến độ tổng thể: <span id="overallProgress">0%</span>
+      </div>
+      <button id="resetAll">Đặt lại tiến độ</button>
+    </aside>
+
+    <main>
+      <h2 id="contentTitle">Chọn bài học để bắt đầu</h2>
+      <p id="contentSubtitle"></p>
+      <div id="contentBody"></div>
+      <div class="controls">
+        <button id="prevBtn">← Bài trước</button>
+        <button id="markDoneBtn">Đánh dấu Hoàn thành</button>
+        <button id="nextBtn">Bài sau →</button>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Trang học quân sự – Thiết kế bởi bạn</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
